@@ -3,25 +3,47 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <link rel="stylesheet" href="twitter.css">
+
   </head>
   <body>
-    <script>
 
-      $(document).ready(function(){
-        var $body = $('body');
+    <div class="tw"> 
+      <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png">
+
+       <textarea id="textArea" name="textArea" rows="6" cols="80">What's happening?</textarea>
+    <button id = "myButton"> Tweet </button>  
+
+   </div>
+
+   <div id="body"></div>
+    <script>
+         
+         $('.tw').click(function(){
+         
+         })
+        
+        /* $('.tweets').click(function() {
+         console.log($(this).text())
+        })*/
+
+
+
+        $(document).ready(function(){
+         var $body = $('#body');
         $body.html('');
 
         var index = streams.home.length - 1;
         while(index >= 0){
           var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
+          var $tweet = $('<div class="tweets"></div>');
+          $tweet.text('@' + tweet.user + ': ' + tweet.message + Date());
           $tweet.appendTo($body);
           index -= 1;
-        }
-
-      });
-
+        } 
+        })
+    
+  
     </script>
   </body>
 </html>

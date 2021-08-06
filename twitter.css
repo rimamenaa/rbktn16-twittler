@@ -1,0 +1,27 @@
+.tweets {
+    border: 1px solid #E1E8ED;
+    border-radius: 5px;
+    width: 50%;
+    height: 110px;
+    margin: 50px 350px;
+    padding: 10px 20px 10px 20px;
+}
+.tw {
+    border: 2px solid navy;
+    border-radius: 10px;
+    width: 50%;
+    height: 110px;
+    margin: 50px 350px;
+    padding: 10px 20px 10px 20px;
+}
+#myButton {
+    background-color: #1DA1F2;
+    border-radius: 20px;
+    font-size: 10px;
+
+}
+img {
+  border-radius: 50%;
+  height: 60%;
+  width: 10%;
+}
