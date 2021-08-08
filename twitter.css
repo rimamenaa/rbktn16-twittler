@@ -1,19 +1,11 @@
 .tweets {
     border: 1px solid #E1E8ED;
     border-radius: 5px;
-    width: 50%;
+    width: 90%;
     height: 110px;
-    margin: 50px 350px;
     padding: 10px 20px 10px 20px;
 }
-.tw {
-    border: 2px solid navy;
-    border-radius: 10px;
-    width: 50%;
-    height: 110px;
-    margin: 50px 350px;
-    padding: 10px 20px 10px 20px;
-}
+
 #myButton {
     background-color: #1DA1F2;
     border-radius: 20px;
@@ -25,3 +17,132 @@ img {
   height: 60%;
   width: 10%;
 }
+
+.sidebar h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+  padding-left: 50px;
+    padding-right: 20px;
+}
+.sidebar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar:hover {
+  background-color: #E1E8ED;
+  border-radius: 30px;
+  color: #1DA1F2;
+  transition: color 100ms ease-out;
+}
+.sidebar.active {
+  color: #1DA1F2;
+}
+.rightSide {
+  border-right: 1px solid white;
+    flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.rightSideBtn {
+    background-color: #1DA1F2;
+     border: none;
+  color: white;
+   font-weight: 900;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+    width: 100%;
+
+}
+body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+.feed {
+  flex: 0.5;
+  border-right: 1px solid grey;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+.feedHome {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid white;
+  padding: 15px 20px;
+}
+.tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid white;
+  padding-right: 10px;
+}
+.tweetBox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetInput {
+  display: flex;
+  padding: 20px;
+}
+.tweetInput input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.tweetButton {
+  background-color: #1DA1F2;
+  border: none;
+  color: white;
+  font-weight: 900;
+
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.leftSide {
+  flex: 0.3;
+}
+.searchInput {
+  display: flex;
+  align-items: center;
+  background-color: #E1E8ED;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.searchInput input {
+  border: none;
+  background-color: #E1E8ED;
+}
+.hashtags {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+  width: 160px;
+  height: 200px;
+}
+

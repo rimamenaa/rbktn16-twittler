@@ -8,20 +8,67 @@
   </head>
   <body>
 
-    <div class="tw"> 
-      <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png">
 
-       <textarea id="textArea" name="textArea" rows="6" cols="80">What's happening?</textarea>
-    <button id = "myButton"> Tweet </button>  
+   <div class = rightSide> 
+      <div class="sidebar active"> 
+        <h2>Home</h2>   
+      </div>
+
+      <div class="sidebar"> 
+         <h2>Explore</h2>  
+      </div>
+ 
+      <div class="sidebar"> 
+         <h2>Notifications</h2>  
+      </div>
+          
+      <div class="sidebar"> 
+         <h2>Messages</h2> 
+      </div>
+
+      <div class="sidebar"> 
+         <h2>Bookmarks</h2>  
+      </div>
+
+      <div class="sidebar"> 
+        <h2>Lists</h2>  
+      </div>
+          
+      <div class="sidebar"> 
+        <h2>Profile</h2>  
+      </div>
+
+      <div class="sidebar"> 
+        <h2>More</h2>
+      </div>
+
+      <button class = "rightSideBtn"> Tweet </button>  
 
    </div>
+ 
 
-   <div id="body"></div>
+
+
+
+    <div class="feed">
+       <div class="feedHome">
+        <h2>Home</h2>
+      </div>
+
+      <div class="tweetBox">
+        <form>
+          <div class="tweetInput">
+            <input type="text" placeholder="What's happening?" />
+          </div>
+          <button class="tweetButton">Tweet</button>
+        </form>
+      </div>
+            
+
+   <div id="homeTweets"></div>
     <script>
          
-         $('.tw').click(function(){
-         
-         })
+  
         
         /* $('.tweets').click(function() {
          console.log($(this).text())
@@ -30,20 +77,33 @@
 
 
         $(document).ready(function(){
-         var $body = $('#body');
-        $body.html('');
+         var $homeTweets = $('#homeTweets');
+        $homeTweets.html('');
 
         var index = streams.home.length - 1;
         while(index >= 0){
           var tweet = streams.home[index];
           var $tweet = $('<div class="tweets"></div>');
           $tweet.text('@' + tweet.user + ': ' + tweet.message + Date());
-          $tweet.appendTo($body);
+          $tweet.appendTo($homeTweets);
           index -= 1;
         } 
         })
     
   
     </script>
+  </div>
+
+  <div class="leftSide">
+      <div class="searchInput">
+        <input type="text" placeholder="Search Twitter" />
+      </div>
+      <div class="hashtags">
+        <h2>Worldwide trends</h2>
+      </div>
+  </div>
+
+
+
   </body>
 </html>
